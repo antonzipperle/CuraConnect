@@ -4,11 +4,15 @@ import path from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  root: '.',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, '.'),
     },
+  },
+  build: {
+    outDir: 'dist',
   },
   server: {
     hmr: process.env.DISABLE_HMR !== 'true',
