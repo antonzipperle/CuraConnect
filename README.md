@@ -1,4 +1,5 @@
 <div align="center">
+    
 # CuraConnect
 
 **A platform connecting seniors with young helpers for everyday tasks**
