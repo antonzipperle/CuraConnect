@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: curaconnect
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: NODE_VERSION
+        value: 20.11.0
